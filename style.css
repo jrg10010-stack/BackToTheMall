@@ -1,0 +1,123 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url("MallTile.jpg");
+    background-size: 200px 200px;
+    background-repeat: repeat;
+    color: #2b1d0c;
+    font-family: 'Times New Roman', Times, Georgia, serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+    padding: 15px 10px;
+}
+
+.container {
+    width: 100%;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+
+h1 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #e6c875; 
+    background-color: #5c2018; 
+    text-align: center;
+    padding: 8px 22px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border: 4px outset #8c3b2b;
+    box-shadow: 5px 5px 0px #2b1d0c;
+}
+
+
+.stores, 
+#store-info {
+    width: 780px;
+    max-width: 100%;
+    background-color: #f2ebd9; 
+    border: 5px ridge #3a5311;
+    box-shadow: 5px 5px 0px #3e2723;
+    padding: 12px;
+}
+
+
+.stores {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.stores canvas {
+    border: 2px solid #3a5311;
+    display: block;
+}
+
+
+#store-info {
+    min-height: 160px;
+    color: #2b1d0c;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#store-info h2 {
+    color: #8c3b2b; 
+    font-size: 1.4rem;
+    font-family: 'Courier New', Courier, monospace;
+    border-bottom: 2px double #3a5311;
+    padding-bottom: 4px;
+}
+
+
+.info-content {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    align-items: stretch;
+    margin-top: 5px;
+}
+
+#store-info img {
+    width: 48%; 
+    height: 250px; 
+    object-fit: cover;
+    border: 4px outset #d8c8b0;
+    box-shadow: 4px 4px 0px #3e2723;
+    flex-shrink: 0;
+}
+
+#store-info p {
+    width: 48%;
+    font-size: 0.95rem;
+    line-height: 1.45;
+    background-color: #e6dcbe;
+    border: 2px inset #b5a482;
+    padding: 12px;
+    margin: 0;
+    flex-grow: 1;
+}
+
+
+.placeholder-text {
+    color: #5c4033;
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px 0;
+    font-family: 'Courier New', Courier, monospace;
+}
